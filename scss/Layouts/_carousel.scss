@@ -1,5 +1,5 @@
 .card-info {
-    background: url(../../img/Violet_top_left_wave.png);
+    background: url(../img/Violet_top_left_wave.png);
     height: 236px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,11 +24,11 @@
         }
 
         .card-img-top {
-                img:hover{
-                    transform: scale3d(1, 1, 1);
-                    transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
-                }        
-          
+            img:hover {
+                transform: scale3d(1, 1, 1);
+                transition: transform 650ms ease-in-out, filter 650ms ease-in-out;
+            }
+
         }
     }
 
@@ -62,11 +62,38 @@
 @include responsive(large) {
     .card-info {
         bottom: 340px;
-        .card-center{
+
+        .card-center {
             height: 1860px;
         }
-        .card-bottom{
+
+        .card-bottom {
             top: 1625px;
+        }
+    }
+}
+@include responsive(medium){
+    .card-info{
+        height: 130px;
+        .card-center{
+            height: 1681px;
+            top: 127px;
+        }
+        .card-bottom{
+            top: 1313px;
+        }
+    }
+}
+@include responsive(small){
+    .card-info{
+        .card-bottom{
+            top: 1195px;
+            img{
+                height: 229px;
+            }
+        }
+        .card-center{
+            height: 1423px;
         }
     }
 }

@@ -44,6 +44,16 @@ button:hover {
     width: 28rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .card {
+    width: 22rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 16rem;
+  }
+}
 input {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50px;
@@ -54,7 +64,7 @@ input {
 }
 
 .header-img {
-  background: url(../../img/yellow_top_wave_01.png) 1px 0%/contain no-repeat;
+  background: url(../img/yellow_top_wave_01.png) 1px 0%/contain no-repeat;
   height: 300px;
   z-index: 20;
 }
@@ -159,7 +169,7 @@ header .icon-header a:hover {
   }
 }
 .card-info {
-  background: url(../../img/Violet_top_left_wave.png);
+  background: url(../img/Violet_top_left_wave.png);
   height: 236px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -218,6 +228,29 @@ header .icon-header a:hover {
   }
   .card-info .card-bottom {
     top: 1625px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-info {
+    height: 130px;
+  }
+  .card-info .card-center {
+    height: 1681px;
+    top: 127px;
+  }
+  .card-info .card-bottom {
+    top: 1313px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card-info .card-bottom {
+    top: 1195px;
+  }
+  .card-info .card-bottom img {
+    height: 229px;
+  }
+  .card-info .card-center {
+    height: 1423px;
   }
 }
 footer {
@@ -385,6 +418,50 @@ footer .container .Newsletter button:hover {
     width: 42%;
   }
 }
+@media screen and (max-width: 768px) {
+  footer .footer-img-1 {
+    top: -228px;
+  }
+  footer .footer-img-2 {
+    top: -38px;
+    height: 617px;
+  }
+  footer .footer-img-2 img[src="./img/footer_background.jpg"] {
+    top: 543px;
+  }
+  footer .container {
+    top: 67px;
+  }
+  footer .container .Contact {
+    width: 18rem;
+  }
+  footer .container .Link {
+    margin-left: -7px;
+  }
+  footer .container .About {
+    margin-right: 0;
+  }
+  footer .container .About .footer-link {
+    margin-right: 13px;
+  }
+  footer .container .Newsletter {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .footer-img-2 {
+    top: -86px;
+  }
+  footer .container .Contact {
+    width: 13rem;
+  }
+  footer .container .footer-link {
+    margin-right: -100px;
+  }
+  footer .container .About {
+    width: 14rem;
+  }
+}
 .courses {
   padding-top: 380px;
 }
@@ -483,5 +560,18 @@ footer .container .Newsletter button:hover {
   .courses .container .courses-1 .courses-info .title {
     text-align: left;
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .courses {
+    top: 1028px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .courses .container {
+    top: 808px;
+  }
+  .courses .container .courses-1 .courses-img {
+    padding-left: 0;
   }
 }/*# sourceMappingURL=main.css.map */

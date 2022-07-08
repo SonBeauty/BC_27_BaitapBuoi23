@@ -125,47 +125,113 @@ footer {
         position: relative;
         top: 1050px;
         z-index: -1;
-        .footer-img-1{
+
+        .footer-img-1 {
             position: none;
             top: -355px;
             z-index: -1;
         }
-        .footer-img-2{
+
+        .footer-img-2 {
             background-color: #aa017e;
             top: -109px;
             height: 800px;
-            img[src="./img/footer_background.jpg"]{
+
+            img[src="./img/footer_background.jpg"] {
                 background: url(../../img/Violet_top_left_wave.png);
                 position: relative;
                 top: 695px;
             }
 
         }
-        .container{
+
+        .container {
             max-width: 100%;
             margin-left: 0;
             margin-right: 0;
             position: absolute;
             top: 266px;
             flex-wrap: wrap;
-            .footer-link{
+
+            .footer-link {
                 margin-right: -234px;
             }
-            .Contact{
+
+            .Contact {
                 width: 28rem;
                 margin-left: 20px;
                 margin-bottom: 65px;
             }
-            .Link{
+
+            .Link {
                 margin-left: 30px;
             }
-            .About{
+
+            .About {
                 width: 18rem;
                 margin-left: 20px;
             }
-            .Newsletter{
+
+            .Newsletter {
                 margin-left: 97px;
                 width: 42%;
+            }
+        }
+    }
+}
+
+@include responsive(medium) {
+    footer {
+        .footer-img-1 {
+            top: -228px;
+        }
+
+        .footer-img-2 {
+            top: -38px;
+            height: 617px;
+            img[src="./img/footer_background.jpg"]{
+                top: 543px;
+            }
+        }
+
+        .container {
+            top: 67px;
+            .Contact {
+                width: 18rem;
+            }
+
+            .Link {
+                margin-left: -7px;
+            }
+
+            .About {
+                margin-right: 0;
+
+                .footer-link {
+                    margin-right: 13px;
+                }
+            }
+
+            .Newsletter {
+                margin-left: 0
+            }
+        }
+    }
+}
+@include responsive(small){
+    footer{
+        .footer-img-2{
+            top: -86px;
+        }
+        .container{
+            .Contact{
+                width: 13rem;
+            }
+            .footer-link{
+                margin-right: -100px;
+            }
+            .About{
+                width: 14rem;
             }
         }
     }

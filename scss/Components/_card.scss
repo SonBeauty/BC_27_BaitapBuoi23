@@ -15,3 +15,13 @@
         width: 28rem;
     }
 }
+@include responsive(medium){
+    .card{
+        width: 22rem;
+    }
+}
+@include responsive(small){
+    .card{
+        width: 16rem;
+    }
+}

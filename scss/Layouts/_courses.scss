@@ -96,22 +96,45 @@
             margin-left: 0;
             margin-right: 0;
             max-width: inherit;
+
             .courses-1 {
                 display: block;
 
                 .courses-info {
                     width: 96%;
                     margin: auto;
-                    .courses-info-1{
-                        .input i{
+
+                    .courses-info-1 {
+                        .input i {
                             left: 35px;
                             top: 2px;
                         }
                     }
-                    .title{
+
+                    .title {
                         text-align: left;
                         font-size: 2rem;
                     }
+                }
+            }
+        }
+    }
+}
+
+@include responsive(medium) {
+    .courses {
+        top: 1028px;
+    }
+}
+
+@include responsive(small) {
+    .courses {
+        .container {
+            top: 808px;
+
+            .courses-1 {
+                .courses-img {
+                    padding-left: 0;
                 }
             }
         }
